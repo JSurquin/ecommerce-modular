@@ -1,0 +1,14 @@
+/* list.component.css */
+.product-list {
+  color: black;
+}
+
+.product-item {
+  @apply border-2 border-gray-400 rounded-lg p-2 m-2;
+  min-height: 30px;
+}
+
+.product-item img {
+  max-width: 50%;
+  max-height: 50%;
+}

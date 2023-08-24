@@ -1,0 +1,10 @@
+<div class="container">
+  <h1 class="text-3xl font-bold">Liste des produits</h1>
+  <ul class="product-list">
+    <li class="product-item" *ngFor="let product of products">
+      {{ product.name }} - {{ product.description }} - {{ product.price }}€
+      <img src="{{ product.imgUrl }}" alt="product image" />
+      <button class="bg-blue-500">Ajouter au panier</button>
+    </li>
+  </ul>
+</div>

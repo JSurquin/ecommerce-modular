@@ -1,0 +1,16 @@
+<div id="page">
+  <app-navbar></app-navbar>
+  <div id="content">
+    <div
+      class="text-sm text-center font-bold mt-4"
+      *ngIf="!authService.isAuthenticated"
+    >
+      Vous n'êtes pas connecté, veuillez vous connecter avant d'ajouter au
+      panier
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+  <div id="footer">
+    <app-footer></app-footer>
+  </div>
+</div>
